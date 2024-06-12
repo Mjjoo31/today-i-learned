@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Today I learned</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Today I Learned Logo" />
+          <h1>Today I Learned</h1>
+        </div>
+        <button class="btn btn-large btn-open">Share a fact</button>
+      </header>
+
+      <form class="fact-form hidden">
+        <input type="text" placeholder="Share a fact with the world..." />
+        <span>200</span>
+        <input type="text" placeholder="Trustworthy source..." />
+
+        <select>
+          <option value="">Choose category:</option>
+          <option value="technology">Technology</option>
+          <option value="science">Science</option>
+          <option value="finance">Finance</option>
+          <option value="society">Society</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="health">Health</option>
+          <option value="history">History</option>
+          <option value="news">News</option>
+        </select>
+        <button class="btn btn-large">Post</button>
+      </form>
+
+      <main class="main">
+        <aside>
+          <ul>
+            <li class="category">
+              <button class="btn btn-all-categories">ALL</button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #3b82f6"
+              >
+                TECHNOLOGY
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #16a34a"
+              >
+                SCIENCE
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #ef4444"
+              >
+                FINANCE
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #eab308"
+              >
+                SOCIETY
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #db2777"
+              >
+                ENTERTAINMENT
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #14b8a6"
+              >
+                HEALTH
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #f97316"
+              >
+                HISTORY
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #8b5cf6"
+              >
+                NEWS
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <section>
+          <ul class="facts-list">
+            <li class="fact">
+              <p>
+                React is being developed by Meta (formerly facebook)
+                <a
+                  class="source"
+                  href="https://opensource.fb.com/"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #3b82f6">
+                technology</span
+              >
+              <div class="vote-buttons">
+                <button>👍 24</button>
+                <button>🤯 9</button>
+                <button>⛔️ 4</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                Millennial dads spend 3 times as much time with their kids than
+                their fathers spent with them. In 1982, 43% of fathers had never
+                changed a diaper. Today, that number is down to 3%
+                <a
+                  class="source"
+                  href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #eab308">society</span>
+              <div class="vote-buttons">
+                <button>👍 12</button>
+                <button>🤯 2</button>
+                <button>⛔️ 0</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                Lisbon is the capital of Portugal
+                <a class="source" href="https://en.wikipedia.org/wiki/Lisbon"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #eab308">Society</span>
+              <div class="vote-buttons">
+                <button>👍 8</button>
+                <button>🤯 3</button>
+                <button>⛔️ 1</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                The shortest war in history lasted 38 minutes! It was between
+                Britian and Zanzibar on August 27, 1896. It was over the
+                ascension of the next Sultan in Zanzibar and resulted in a
+                British history
+                <a
+                  class="source"
+                  href="https://en.wikipedia.org/wiki/Anglo-Zanzibar_War"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #f97316">history</span>
+              <div class="vote-buttons">
+                <button>👍 15</button>
+                <button>🤯 8</button>
+                <button>⛔️ 2</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                As of 2023, Breaking Bad is the highest-rated TV show on IMDb
+                with a rating of 9.4/10
+                <a
+                  class="source"
+                  href="https://www.imdb.com/title/tt0903747/ratings/"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #db2777"
+                >entertainment</span
+              >
+              <div class="vote-buttons">
+                <button>👍 11</button>
+                <button>🤯 5</button>
+                <button>⛔️ 2</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                The first 1GB hard drive was made in 1980 and had a price of
+                $40,000!
+                <a
+                  class="source"
+                  href="https://www.autodesk.com/products/fusion-360/blog/a-look-back-at-the-first-built-in-hard-drive/#:~:text=The%20Rapidly%20Evolving%20HDD&text=In%201980%2C%20we%20saw%20the,around%20for%20a%20long%20time."
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #f97316">history</span>
+              <div class="vote-buttons">
+                <button>👍 4</button>
+                <button>🤯 1</button>
+                <button>⛔️ 0</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                "typewriter" is the longest English word you can type using 1
+                row of the QWERTY keyboard
+                <a
+                  class="source"
+                  href="https://twitter.com/intel/status/442074967522684928"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #3b82f6"
+                >technology</span
+              >
+              <div class="vote-buttons">
+                <button>👍 9</button>
+                <button>🤯 1</button>
+                <button>⛔️ 0</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                Human DNA is 99.9% identical from person to person
+                <a
+                  class="source"
+                  href="https://www.genome.gov/about-genomics/fact-sheets/Genetics-vs-Genomics"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #16a34a">science</span>
+              <div class="vote-buttons">
+                <button>👍 4</button>
+                <button>🤯 9</button>
+                <button>⛔️ 1</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                The less money you spend, the more you save!
+                <a
+                  class="source"
+                  href="https://bettermoneyhabits.bankofamerica.com/en/saving-budgeting/ways-to-save-money"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #ef4444">finance</span>
+              <div class="vote-buttons">
+                <button>👍 2</button>
+                <button>🤯 1</button>
+                <button>⛔️ 0</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                There is enough DNA in the average person’s body to stretch from
+                the sun to Pluto and back — 17 times
+                <a
+                  class="source"
+                  href="https://skeptics.stackexchange.com/questions/10606/length-of-uncoiled-human-dna"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #16a34a">science</span>
+              <div class="vote-buttons">
+                <button>👍 6</button>
+                <button>🤯 1</button>
+                <button>⛔️ 2</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                React was developed by Google
+                <a class="source" href="https://example.com" target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #3b82f6"
+                >technology</span
+              >
+              <div class="vote-buttons">
+                <button>👍 1</button>
+                <button>🤯 0</button>
+                <button>⛔️ 9</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
