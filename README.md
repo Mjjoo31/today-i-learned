@@ -2,6 +2,8 @@
 
 As a front-end developer preparing for a career in the industry, I have built a web application utilizing HTML, CSS, JavaScript, React, and Supabase. This application allows users to add URLs, categories, and texts of articles they have read throughout the day, providing a streamlined way to manage and track their learning progress.
 
+You can view the live project [here](https://todayilearned-mj.netlify.app/).
+
 ![Portfolio Project Screenshot](images/portfolio_screenshot.png)
 
 ## Key Features
